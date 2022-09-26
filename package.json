@@ -6,7 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@giphy/js-fetch-api": "^4.4.0",
     "date-fns": "^2.29.3",
+    "giphy-random": "^2.0.8",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "17.0.2",

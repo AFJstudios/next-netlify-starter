@@ -7,7 +7,7 @@ import Link from 'next/link';
 const name = 'Adrian Faz Jr.';
 export const siteTitle = 'Next.js Sample Website';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home , lostpage}) {
     return (
       <div className={styles.container}>
         <Head>
@@ -37,6 +37,10 @@ export default function Layout({ children, home }) {
                 alt=""
               />
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            </>
+          ) : lostpage ? (
+            <>
+              <h1 className={utilStyles.heading2Xl}>404 Page</h1><br/>
             </>
           ) : (
             <>
