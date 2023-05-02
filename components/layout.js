@@ -8,7 +8,7 @@ import Menu from './menu';
 const name = 'Adrian Faz Jr.';
 export const siteTitle = 'Adrians home on the web';
 
-export default function Layout({ children, home , lostpage}) {
+export default function Layout({ children, home , calendaropage ,lostpage}) {
     return (
       <div className={styles.container}>
         <Head>
@@ -43,6 +43,10 @@ export default function Layout({ children, home , lostpage}) {
           ) : lostpage ? (
             <>
               <h1 className={utilStyles.heading2Xl}>404 Page</h1><br/>
+            </>
+          ) : calendaropage ? (
+            <>
+              <h1 className={utilStyles.heading2Xl}>Let's meet!</h1><br/>
             </>
           ) : (
             <>

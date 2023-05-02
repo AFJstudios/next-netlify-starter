@@ -9,6 +9,9 @@ export default function menu() {
             <li>
                 <a href='/blog'>Blog</a>
             </li>
+            <li>
+                <a href='/calendar'>Let's Meet!</a>
+            </li>
         </ul>
     );
   }
