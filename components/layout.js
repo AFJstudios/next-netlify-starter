@@ -10,7 +10,7 @@ export const siteTitle = 'Adrians home on the web';
 
 export default function Layout({ children, home , calendaropage ,lostpage}) {
     return (
-      <div className={styles.container}>
+      <div className={styles.main}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -25,20 +25,12 @@ export default function Layout({ children, home , calendaropage ,lostpage}) {
           />
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
-        </Head>
+        </Head>        
+        <Menu></Menu>
         <header className={styles.header}>
           {home ? (
             <>
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={144}
-                width={144}
-                alt=""
-              />
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
-              <Menu></Menu>
             </>
           ) : lostpage ? (
             <>
@@ -50,23 +42,10 @@ export default function Layout({ children, home , calendaropage ,lostpage}) {
             </>
           ) : (
             <>
-              <Link href="/">
-                <a>
-                  <Image
-                    priority
-                    src="/images/profile.jpg"
-                    className={utilStyles.borderCircle}
-                    height={108}
-                    width={108}
-                    alt=""
-                  />
-                </a>
-              </Link>
-              <Menu></Menu>
             </>
           )}
         </header>
-        <main>{children}</main>
+        <main className={styles.container}>{children}</main>
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">

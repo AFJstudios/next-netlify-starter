@@ -1,20 +1,31 @@
+.container  {
+  width: 80%;
+  margin: auto;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+
 .mainmenu  {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 15px;
-  }
-  
-  .mainmenu li {
-     float: left;
-  }
-  
-  .mainmenu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  width: 100%;
+  background-color: #333;
+}
+
+.mainmenu li {
+    float: left;
+}
+
+.mainmenu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.mainmenu li a:hover {
+  color: #1F51FF;
+}
