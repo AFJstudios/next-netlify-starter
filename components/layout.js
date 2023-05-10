@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Menu from './menu';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const name = 'Adrian Faz Jr.';
 export const siteTitle = 'Adrians home on the web';
