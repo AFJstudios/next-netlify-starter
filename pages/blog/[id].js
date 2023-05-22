@@ -8,6 +8,10 @@ export default function Post({ postData }) {
     return (
       <Layout>
         <Head>
+          <meta
+            name="description"
+            content={postData.title}
+          />
           <title>{postData.title}</title>
         </Head>
         <article>
